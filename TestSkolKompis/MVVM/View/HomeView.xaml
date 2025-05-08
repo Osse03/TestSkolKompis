@@ -13,31 +13,31 @@
                    HorizontalAlignment="Left"
                    Margin="0,0,0,20"/>
 
-        
-        <StackPanel Orientation="Horizontal">
-            <Border Width="400"
-                    Height="200"
-                    >
 
-                <Border.Background>
+        <StackPanel Orientation="Horizontal">
+            <Button Width="400"
+                    Height="200"
+                    Click="OpenWindow1Button_Click">
+
+                <Button.Background>
 
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
                         <GradientStop Color="#FF3F51B5" Offset="0.0"/>
                         <GradientStop Color="#FF2196F3" Offset="1"/>
                     </LinearGradientBrush>
-                    
-                </Border.Background>
 
-                <Border.Clip>
+                </Button.Background>
+
+                <Button.Clip>
                     <RectangleGeometry RadiusX="10" RadiusY="10"
                                        Rect="0,0,400,200"/>
-                </Border.Clip>
+                </Button.Clip>
 
                 <Grid>
 
-                    <StackPanel>
+                    <StackPanel Margin="-144,0,0,0">
 
-                        <TextBlock Text="Hitta nya vänner &#x0a; i din område"
+                        <TextBlock Text=" Slumpa fram &#x0a; din nya Skolkompis"
                                    Foreground="White"
                                    FontSize="25"
                                    Margin="20,10,10,0"/>
@@ -45,13 +45,13 @@
                         <TextBlock Text=" Börja idag !! &#x0a;Matcha med andra &#x0a; och gör skolan till roligare miljö"
                                    Foreground="White"
                                    FontSize="15"
-                                   Margin="20,10,10,0"/>
+                                   Margin="20,20,10,0"/>
                     </StackPanel>
 
                     <Image Width="250"
                            Height="250"
                            Source="/Images/ChatGPT Image 8 maj 2025 02_59_39.png"
-                           HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Margin="0,61,-102,-110">
+                           HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Margin="0,56,-234,-110">
                         <Image.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -62,23 +62,54 @@
                         </Image.RenderTransform>
                     </Image>
                 </Grid>
-                
-            </Border>
 
-            <Border Width="200" 
-                    Height="200"
-                    CornerRadius="10"
-                    Margin="45,0,0,0">
+            </Button>
 
-                <Border.Background>
+            <Button Width="200" 
+        Height="200"
+        Click="OpenWindow2Button_Click"
+        Margin="45,0,0,0">
 
+                <Button.Clip>
+                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,400,200"/>
+                </Button.Clip>
+
+                <Button.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
                         <GradientStop Color="#ffc554" Offset="0.0"/>
                         <GradientStop Color="#FF2196F3" Offset="1"/>
                     </LinearGradientBrush>
+                </Button.Background>
 
-                </Border.Background>
-            </Border>
+                <!-- Här börjar lösningen! -->
+                <Grid>
+
+                    <!-- Texten -->
+                    <TextBlock Text="Upptäck personer !! &#x0a;med liknande intressen"
+                   Foreground="Black"
+                   FontSize="17"
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top"
+                   Margin="10,-46,0,0"/>
+
+                    <!-- Bilden -->
+                    <Image Width="120"
+               Height="118"
+               Source="/Images/studentSöker.png"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Bottom"
+               Margin="0,0,-7,-113" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-22.355"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Grid>
+            </Button>
         </StackPanel>
 
         <StackPanel>
@@ -90,8 +121,8 @@
                 </Style>
 
             </StackPanel.Resources>
-            
-            
+
+
             <TextBlock Text="Mer om oss"
             Foreground="White"
             FontSize="20"
@@ -105,31 +136,60 @@
                         Height="150"
                         Background="#3B3B5C"
                         CornerRadius="10"
-                        Margin="0"/>
+                        Margin="0">
+
+                    <TextBlock Text=" Upptäck vänner &#x0a; enkelt och tryggt "
+                              Foreground="White"
+                              FontSize="16" Height="72" HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"/>
+
+
+                </Border>
 
                 <Border Width="150"
                        Height="150"
                        Background="#4B5D82"
-                       CornerRadius="10"/>
+                       CornerRadius="10">
+
+                    <TextBlock Text=" Vårt mål är att göra &#x0a; skolan roligare "
+                              Foreground="White"
+                              FontSize="16" Height="57" HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"/>
+                </Border>
 
                 <Border Width="150"
                        Height="150"
                       Background="#5C728E"
-                      CornerRadius="10"/>
+                      CornerRadius="10">
+
+
+                    <TextBlock Text=" Utvecklat av studenter &#x0a; för studenter"
+                              Foreground="White"
+                              FontSize="15" Height="57" HorizontalAlignment="Left" 
+                           VerticalAlignment="Center"/>
+                </Border>
 
                 <Border Width="150"
                         Height="150"
                         Background="#667FA3"
-                        CornerRadius="10"/>
-                
+                        CornerRadius="10">
+
+                    <TextBlock Text=" En trygg plats &#x0a; för studenter"
+                             Foreground="White"
+                             FontSize="16" Height="57" HorizontalAlignment="Left" 
+                              VerticalAlignment="Center"/>
+
+
+                </Border>
+
 
             </StackPanel>
 
         </StackPanel>
-        
-        
-        
-        
+
+
+
+
     </StackPanel>
-    
+
 </UserControl>

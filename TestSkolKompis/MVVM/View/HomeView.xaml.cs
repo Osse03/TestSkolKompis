@@ -24,5 +24,20 @@ namespace TestSkolKompis.MVVM.View
         {
             InitializeComponent();
         }
+        private void OpenWindow1Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            window1.Show();
+        }
+
+        private void OpenWindow2Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 window2 = new Window2();
+            window2.Show();
+        }
+
+
+
+
     }
 }

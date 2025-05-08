@@ -33,7 +33,7 @@ xmlns:viewModel="clr-namespace:TestSkolKompis.MVVM.ViewModel"
                 <RowDefinition/>
             </Grid.RowDefinitions>
             
-            <TextBlock Text="Skol Kompis"
+            <TextBlock Text="SkolKompis"
              VerticalAlignment="Center"
              HorizontalAlignment="Left"
              Foreground="White"

@@ -1,0 +1,56 @@
+﻿<Window x:Class="TestSkolKompis.MVVM.View.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hitta en matchning" Height="500" Width="800"
+        Background="#272537" WindowStartupLocation="CenterScreen">
+
+    <Border Background="#3B3B5C" CornerRadius="10" Padding="20" Margin="50">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="200" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Text på vänster sida -->
+            <StackPanel Grid.Column="0">
+                <TextBlock Text="Du har hittat en ny vän!" 
+                       Foreground="White" 
+                       FontSize="24" 
+                       HorizontalAlignment="Center" 
+                       Margin="0,0,0,20"/>
+
+                <TextBlock x:Name="PersonNamn" Foreground="White" FontSize="18" Margin="0,5"/>
+                <TextBlock x:Name="PersonÅlder" Foreground="White" FontSize="18" Margin="0,5"/>
+                <TextBlock x:Name="PersonUtbildning" Foreground="White" FontSize="18" Margin="0,5"/>
+                <TextBlock x:Name="PersonHobbys" Foreground="White" FontSize="18" Margin="0,5"/>
+
+                <Button Content="Lägg till vän"
+                        Width="150"
+                        Margin="0,30,0,0"
+                        Padding="10"
+                        Background="#FF2196F3"
+                        Foreground="White"
+                        BorderThickness="0"
+                        FontSize="16"
+                        Cursor="Hand"
+                        HorizontalAlignment="Center"
+                        />
+            </StackPanel>
+
+            
+
+
+            <!-- Bild på höger sida -->
+            <Image x:Name="PersonBild" 
+               Grid.Column="1"
+               Width="150"
+               Height="150"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Stretch="UniformToFill"
+               Margin="20"
+               />
+        </Grid>
+    </Border>
+
+</Window>
