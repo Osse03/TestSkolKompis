@@ -37,7 +37,7 @@
                 </Border>
 
                 <!-- Namn -->
-                <TextBlock Text="Alexander Thorbjörn Nilsson"
+                <TextBlock Text="Alexander Nilsson"
                            FontSize="28"
                            FontWeight="Bold"
                            Foreground="White"
@@ -47,7 +47,7 @@
                 <Rectangle Fill="#444" Height="2" Width="200" HorizontalAlignment="Center" RadiusX="1" RadiusY="1"/>
 
                 <!-- Ålder -->
-                <TextBlock Text="Ålder: 35"
+                <TextBlock Text="Ålder: 30"
                            FontSize="18"
                            Foreground="#BBBBBB"
                            HorizontalAlignment="Center"/>
